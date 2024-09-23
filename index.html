@@ -46,6 +46,22 @@
     <footer>
         <p>© 2024 Your Name - Delicious, Easy-to-Follow Recipes</p>
     </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll('.recipe h2');
+
+        sections.forEach(section => {
+            section.addEventListener('click', () => {
+                const nextElement = section.nextElementSibling;
+                if (nextElement.style.display === 'block') {
+                    nextElement.style.display = 'none';
+                } else {
+                    nextElement.style.display = 'block';
+                }
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
