@@ -51,6 +51,11 @@ ul li, ol li {
     margin-bottom: 10px;
 }
 
+ul, ol {
+    display: none;
+}
+
+
 /* Footer Styling */
 footer {
     text-align: center;
